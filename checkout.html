@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Own Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>E-Commerce</title>
+</head>
+<body id="top">
+
+<!-- ===================== Navbar ========================= -->
+ 
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Bookcart</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="registration.html">Register</a>
+          </li>
+      </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="search.html" style="text-decoration: none; color: grey;">Search</a></button>
+        </form>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+ <!-- ================================= Checkout Form =================================== -->
+  <main class="mt-5 pt-4">
+    <div class="container wow fadeIn">
+
+      <!-- Heading -->
+      <h2 class="my-5 h2 text-center">Checkout form</h2>
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-8 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card content-->
+            <form class="card-body">
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-2">
+
+                  <!--firstName-->
+                  <div class="md-form ">
+                    <input type="text" id="firstName" class="form-control">
+                    <label for="firstName" class="">First name</label>
+                  </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-2">
+
+                  <!--lastName-->
+                  <div class="md-form">
+                    <input type="text" id="lastName" class="form-control">
+                    <label for="lastName" class="">Last name</label>
+                  </div>
+
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Username-->
+              <div class="md-form input-group pl-0 mb-5">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
+              </div>
+
+              <!--email-->
+              <div class="md-form mb-5">
+                <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
+                <label for="email" class="">Email (optional)</label>
+              </div>
+
+              <!--address-->
+              <div class="md-form mb-5">
+                <input type="text" id="address" class="form-control" placeholder="XYZ Building">
+                <label for="address" class="">Address</label>
+              </div>
+
+              <!--address-2-->
+              <div class="md-form mb-5">
+                <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
+                <label for="address-2" class="">Address 2 (optional)</label>
+              </div>
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                  <label for="country">Country</label>
+                  <select class="custom-select d-block w-100" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>India</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                  <label for="state">State</label>
+                  <select class="custom-select d-block w-100" id="state" required>
+                    <option value="">Choose...</option>
+                    <option>J&K</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Punjab</option>
+                    <option>Uttarakhand</option>
+                    <option>Haryana</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                  <label for="zip">Pin</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Pin code required.
+                  </div>
+
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <hr>
+
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="same-address">
+                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="save-info">
+                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+              </div>
+
+              <hr>
+
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                  <label class="custom-control-label" for="credit">Credit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="debit">Debit card</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="UPI" name="paymentMethod" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="UPI">UPI</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cc-name">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="cc-number">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: #fff;"><a href="page2.html">Continue to checkout</a></button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4 mb-4">
+
+          <!-- Heading -->
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            
+          </h4>
+
+          <!-- Cart -->
+          <ul class="list-group mb-3 z-depth-1">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Men's Cotton Shirt</h6>
+                <small class="text-muted">Made from pure cotton</small>
+              </div>
+              <span class="text-muted">₹999</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Nike Shoes</h6>
+                <small class="text-muted">Original Nike Product.</small>
+              </div>
+              <span class="text-muted">₹2499</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>OFFSHOPPING</small>
+              </div>
+              <span class="text-success">-₹500</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Grand Total</span>
+              <strong>₹2998</strong>
+            </li>
+          </ul>
+          
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-secondary btn-md waves-effect m-0" type="button">Redeem</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+    
+<!-- ============================== Footer =============================== -->
+
+<section class="footer_section pt-5 pb-2" id="footer_section">
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-6 pl-5 pl-small-15">
+          <div class="footer_title">
+            <a href="index.html"><img src="img/logo.png" width="150px"
+            class="img img-fluid" alt="logo"></a>
+          </div>
+          <div>
+          <b><i>At Your Doorstep</i></b>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="footer_title pt-3 mb-3">
+          <h3>Quick Links</h3>
+          </div>
+          <div class="footer_links">
+          <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="javascript:;">Offers & Discounts</a></li>
+          <li><a href="checkout.html">Promo Code</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="footer_title pt-3 mb-3">
+          <h3>New Products</h3>
+        </div>
+        <div class="footer_links">
+        <ul>
+        <li><a href="javascript:;">Women's Clothing</a></li>
+        <li><a href="javascript:;">Men's Clothing</a></li>
+        <li><a href="javascript:;">Kids Section</a></li>
+        </ul>
+       </div>
+      </div>
+    <div class="col-md-3 col-6">
+      <div class="footer_title pt-3 mb-3">
+      <h3>Support</h3>
+      </div>
+      <div class="footer_links">
+      <ul>
+      <li><a href="javascript:;">FAQ</a></li>
+      <li><a href="javascript:;">Terms & Conditions</a></li>
+      <li><a href="javascript:;">Privacy Policy</a></li>
+      <li><a href="javascript:;">Payment Issue</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="border-top">
+  <h6 class="text-center mt-3">Copyright ©2020 All rights reserved
+  </h6>
+</div>
+</footer>
+</section>
+<div class="backtop">
+  <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+    <i class="fas fa-chevron-up text-dark"></i>
+  </a>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  </body>
+</html>
